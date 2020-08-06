@@ -1,6 +1,26 @@
 body {
-    width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/img.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../images/img.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    margin:  auto;
+    justify-content: space-between;
+}
+
+.container1 {
+    width: 25%;
+    margin-top: 10vh;
+    margin-left:  10vw;
+    margin-bottom: 10vh;
+}
+
+.container2 {
+    width: 40%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    margin-top: 10vh;
+    margin-right:  15vw;
+    border-radius: 8vmin;
+    margin-bottom: 10vh;
 }
