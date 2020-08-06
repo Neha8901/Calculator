@@ -1,11 +1,11 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 30px;
     overflow-x: hidden;
 }
 
 body {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url("../images/img.jpg");
     background-size: cover;
@@ -17,17 +17,89 @@ body {
 
 .container1 {
     width: 25%;
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-left:  10vw;
     margin-bottom: 10vh;
 }
 
 .container2 {
     width: 40%;
+    height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    margin-top: 10vh;
+    margin-top: 5vh;
     margin-right:  15vw;
     border-radius: 8vmin;
     margin-bottom: 10vh;
+    padding: 1vmin 0 10vmin 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.result {
+    height: 15%;
+    background-color: white;
+    margin: 2vmin 8vmin 0 8vmin;
+    border-radius: 5vmin;
+}
+
+#history-value {
+    text-align: right;
+    color: gray;
+    font-size: 85%;
+    padding: 1vmin 8vmin 0 5vmin;
+}
+
+#output-value {
+    text-align: right;
+    color: black;
+    font-size: 100%;
+    font-weight: bolder;
+    padding: 2vmin 8vmin 1vmin 5vmin;
+}
+
+.keyboard {
+    height: 85%;
+    margin: 2vmin 5vmin 2vmin 7.8vmin;
+    border-radius: 5vmin;
+}
+
+.number, .operator, .blank {
+    width: 5vw;
+    margin: 3vmin;
+    padding: 3vmin;
+    font-size: 90%;
+    font-weight: bold;
+    border-radius: 50%;
+    border-width: 0;
+    float: left;
+}
+
+.number, .operator {
+    cursor: pointer;
+}
+
+button:nth-child(4) {
+    background-color: yellowgreen;
+}
+button:nth-child(8) {
+    background-color: chocolate;
+}
+button:nth-child(12) {
+    background-color: darkolivegreen;
+}
+button:nth-child(16) {
+    background-color: aquamarine;
+}
+button:nth-child(19) {
+    background-color: green;
+    color: white;
+}
+
+#blank {
+    visibility: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
