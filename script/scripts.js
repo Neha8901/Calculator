@@ -18,3 +18,16 @@ function setOutputValue(num) {
         document.getElementById("output-value").innerText = Number(num).toLocaleString("en");
     }
 }
+
+var number = document.getElementsByClassName("number");
+
+for (let i = 0; i < number.length; i++) {
+    number[i].addEventListener("click", function() {
+        var output = getOutputValue();
+        if (output != NaN) {
+            output += this.id;
+            setOutputValue(output);
+        }
+    });
+}
+
